@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Course } from './seperate';
 import { COURSES } from './../test-course';
 
-
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
@@ -13,7 +12,7 @@ export class CoursesComponent implements OnInit {
   courses = COURSES;
   selectedCourse = this.course.selectedCourse;
 
-  onSelect(course){
+  onSelect(course) {
     this.selectedCourse = course;
   }
 
